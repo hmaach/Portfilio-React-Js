@@ -1,0 +1,157 @@
+.container.formation_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* width: 70%; */
+    /* padding-bottom: 3rem; */
+}
+
+
+.formation {
+    background: var(--color-bg-variant);
+    /* text-align: ; */
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    user-select: none;
+    transition: var(--transition);
+    margin: 1.5rem 0;
+}
+
+.formation:hover {
+    border-color: var(--color-primary-variant);
+}
+
+.titref {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.whenf,
+.wheref {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    margin: 0.8rem auto 0;
+    width: 95%;
+}
+
+.whenf-icon,
+.wheref-icon {
+    margin-right: 7px;
+    font-size: 1.1rem;
+
+}
+
+.me2 {
+    width: 60%;
+    margin: auto 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,
+            transparent,
+            var(--color-primary),
+            transparent);
+    display: grid;
+    place-items: center;
+    /* border: red solid; */
+}
+
+.me2-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.me2-image:hover {
+    transform: rotate(0);
+
+}
+
+
+
+/* ==========================medium */
+@media screen and (max-width: 1024px) {
+    .container.formation_container {
+        /* width: 60%; */
+        display: block;
+        width: var(--container-width-md);
+
+
+    }
+
+    .me2 {
+        display: none;
+    }
+
+
+    .formation_container {
+        grid-template-columns: 1fr;
+    }
+
+    .formation_container>div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .competence_content {
+        padding: 1rem;
+    }
+
+    .btn-competence_filter {
+        margin: 0.3rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.5rem;
+        border: 1px solid var(--color-primary);
+    }
+
+
+}
+
+/* ==========================small */
+@media screen and (max-width: 600px) {
+    /* .formation_container {
+        gap: 1rem;
+    } */
+
+    .container.formation_container {
+        width: var(--container-width-ms);
+    }
+
+    .titref {
+        /* font-size: 1rem; */
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .whenf {
+        width: 100%;
+    }
+
+    .wheref {
+        display: none;
+    }
+
+    .whenf-icon,
+    .wheref-icon {
+        margin-right: 7px;
+        font-size: 1rem;
+    }
+
+    .formation_container>div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .competence_content {
+        padding: 1rem;
+    }
+
+    .formation {
+        padding-bottom: 1rem;
+    }
+}

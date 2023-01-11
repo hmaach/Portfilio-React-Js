@@ -1,0 +1,148 @@
+.header_container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#about,
+.about {
+    /* border: rgb(94, 255, 0) 1px solid; */
+    margin-top: 1.2rem;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+.info {
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.age,
+.location {
+
+    margin: 5px 0;
+}
+
+.age-icon,
+.location-icon {
+    font-size: 1.3rem;
+    margin-right: 10px !important;
+}
+
+.about p{
+    /* border: red 1px solid; */
+    display: block;
+    overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+
+}
+
+
+
+header {
+    height: 100%;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============================ */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+}
+
+.headerSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    /* bottom: 24rem; */
+}
+
+.headerSocial::after {
+    content: "";
+    width: 2px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+
+/* ===================================me */
+
+.me {
+    background-color: linear-gradient(var(--color-primary), transparent);
+    width: 15rem;
+    height: 23rem;
+    margin: auto;
+    /* position: relative;
+    left: 25%; */
+    transform: calc(50%, 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    /* padding: 5rem; */
+}
+
+
+
+/* ==========================medium */
+@media screen and (max-width: 1024px) {
+    .header_container2 {
+        gap: 0rem !important;
+        grid-template-columns: 1fr;
+    }
+    #about h2 {
+    display: none;    }
+    .header_container2 > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .me {
+        /* border: red 1px solid; */
+        width: 15rem;
+        height: 15rem;
+        margin:  auto;
+        margin-top: 4rem;
+        border-radius: 12rem 12rem 0 0;
+        overflow: hidden;
+    }
+    .profil{
+        padding: 0;
+    }
+
+    
+}
+
+/* ==========================small */
+@media screen and (max-width: 600px) {
+    .headerSocial {
+
+        top: 20rem;
+    }
+
+    .header_container2 > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+}

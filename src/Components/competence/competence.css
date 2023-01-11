@@ -1,0 +1,120 @@
+/* .competence_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+} */
+
+
+.competence_filter{
+    /* border: red 1px solid; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.btn-competence_filter{
+    background: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    margin:  0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 2rem;
+}
+
+.btn-competence_filter:hover{
+    color: var(--color-bg);
+    background: var(--color-primary);
+}
+
+
+.btn-competence_filter:active{
+    color: var(--color-bg);
+    background: var(--color-primary);
+}
+
+
+
+
+.competence_container>div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.competence_container>div:hover {
+    /* background: transparent;  */
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.competence_container>div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.competence_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.competence_detail {
+    display: flex;
+    gap: 1rem;
+}
+
+.competence_detail-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+/* ==========================medium */
+@media screen and (max-width: 1024px) {
+    .competence_container {
+        grid-template-columns: 1fr;
+    }
+
+    .competence_container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .competence_content {
+        padding: 1rem;
+    }
+    .btn-competence_filter{
+        margin: 0.3rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.5rem;
+        border: 1px solid var(--color-primary);
+    }
+    
+    
+}
+
+/* ==========================small */
+@media screen and (max-width: 600px) {
+    .competence_container {
+        gap: 1rem;
+    }
+
+    .competence_container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .competence_content {
+        padding: 1rem;
+    }
+    .competence_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}

@@ -1,0 +1,51 @@
+.container.container_interet{
+    width: 40%;
+    padding-bottom: 3.3rem;
+}
+
+.avatar{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.interet{
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+.interet_detail{
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    margin: 0.8rem auto 0;
+    width: 80%;
+
+}
+
+
+
+/* ==========================medium */
+@media screen and (max-width: 1024px){
+    .container.container_interet{
+        width: 60%;
+    }
+}
+
+/* ==========================small */
+@media screen and (max-width: 600px){
+    .container.container_interet{
+        width: var(--container-width-ms);
+    }
+    .interet_detail{
+        width: var(--container-width-ms);
+    
+    }
+}
+
+
+/* -----------------swiper style */
