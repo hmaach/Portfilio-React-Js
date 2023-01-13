@@ -7,7 +7,10 @@
 
 }
 
-.filter{
+
+
+/* ----------------les btns du filtrage */
+.filter {
     /* border: red 1px solid; */
     display: flex;
     justify-content: center;
@@ -15,7 +18,7 @@
     margin-bottom: 1rem;
 }
 
-.btn-filter{
+.btn-filter {
     background: var(--color-bg);
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
@@ -27,13 +30,13 @@
     border-radius: 2rem;
 }
 
-.btn-filter:hover{
+.btn-filter:hover {
     color: var(--color-bg);
     background: var(--color-primary);
 }
 
 
-.btn-filter:active{
+.btn-filter:active {
     color: var(--color-bg);
     background: var(--color-primary);
 }
@@ -49,9 +52,12 @@
     /* border: red solid 1px; */
     /* display: block; */
     /* width: 30%; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 1.7rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     transition: var(--transition);
 }
 
@@ -63,32 +69,32 @@
     border-radius: 1.2rem;
     border: 1px solid transparent;
     user-select: none;
-    margin: 1rem 1rem;
-    width: 11rem;
-    height: 13rem;
+    /* margin: 1rem 1rem; */
+    width: 22%;
+    height: 11rem;
     transition: var(--transition);
 }
 
-.certificat:hover{
+.certificat:hover {
     border-color: var(--color-primary-variant);
 }
 
 .titre {
     font-size: 1rem;
     font-weight: 500;
-    height: 3.3rem;
-    margin-bottom: 0.7rem;
-    display: block;
+    /* height: 3.3rem; */
+    /* margin-bottom: 0.7rem; */
+    /* display: block; */
     /* border: red solid 1px; */
     color: var(--color-white);
 }
 
-.where {
+.from {
     font-size: 0.9rem;
     display: block;
     /* border: red solid 1px; */
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     margin: auto;
     color: var(--color-white);
 
@@ -96,32 +102,78 @@
 
 .when,
 .id {
-    font-size: 0.67rem;
+    /* font-size: rem; */
     color: var(--color-light);
     font-weight: 300;
     display: block;
     /* margin: 0.3rem auto 0; */
-    /* width: 95%; */
+    width: 95%;
 }
 
-.when-icon {
-    margin-left: 7px;
-    margin-right: 11px;
-    font-size: 0.9rem;
-    /* border: red solid 1px; */
+.card_container div {
+
+    /* border: orangered 1px solid; */
 }
 
-.id-icon {
-    margin-left: 8px;
-    font-size: 0.8rem;
-    margin-right: 3px;
+.card {}
+
+
+.card_container {
+    /* border: rgb(21, 255, 0) 1px solid; */
+    margin: 0.6rem;
+
 }
 
-.divAfficher {
+.card_icon {
+    display: inline;
+}
+
+.titre-icon {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.titre_card {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 2px;
+}
+
+.card_titre {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.card_from {
+    width: 87%;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_id {
+    width: 87%;
+    padding: 0;
+
+}
+
+.card_date {
+    width: 87%;
+    padding: 0;
+
+}
+
+.card_detail div {
+    float: right;
+}
+
+.card_afficher {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     /* border: red solid 1px; */
-    margin-top: 0.9rem;
+    margin-top: 0.3rem;
     transition: var(--transition);
 
 
@@ -140,28 +192,63 @@
 
 
 
+
+
+/* ==========================midum */
+
+@media screen and (max-width: 1024px) {
+    .container.formation_container {
+
+        width: var(--container-width-md);
+    }
+
+
+
+    .btn-filter {
+        margin: 0.3rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+        border: 1px solid var(--color-primary);
+    }
+
+    .certificat {
+        width: 40%;
+        height: 8.5rem;
+    }
+
+
+
+    .card_afficher {
+        margin-top: 0.7rem;
+    }
+
+    .when,
+    .id {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* ==========================small */
 @media screen and (max-width: 600px) {
     .container.certificat_container {
         width: var(--container-width-ms);
+        width: 100%;
     }
 
-    /* .certificats {
-            border: red solid 1px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            transition: var(--transition);
-        } */
-
-
-    .certificat {
-        padding: 0.7rem;
-        border-radius: 1.2rem;
-        margin: 1rem 1rem;
-        width: 6.7rem;
-        height: 9rem;
-        /* border: yellow solid 1px; */
+    .btn-filter {
+        margin: 0.3rem;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+        border: 1px solid var(--color-primary);
     }
 
     .titre {
@@ -185,19 +272,10 @@
         font-weight: 300;
     }
 
-    .when-icon {
-        margin-left: 10px;
-        margin-right: 8px;
-        font-size: 0.5rem;
-    }
 
-    .id-icon {
-        margin-left: 10px;
-        font-size: 0.5rem;
-        margin-right: 3px;
-    }
 
-    .divAfficher {
+
+    .card_afficher {
         display: flex;
         justify-content: center;
         margin-top: 0.6rem;
@@ -214,117 +292,73 @@
 
 
 
-/* ==========================midum */
-
-@media screen and (max-width: 1024px) {
-    .container.formation_container {
-
-        width: var(--container-width-md);
-    }
-
-
-    
-    .btn-filter{
-        margin: 0.3rem;
-        padding: 0.3rem 0.8rem;
-        font-size: 0.5rem;
-        border: 1px solid var(--color-primary);
-    }
-    
-    .certificat {
-        padding: 0.6rem;
-        margin: 1rem 1rem;
-        width: 8rem;
-        height: 9rem;
-    }
-    
-    .titre {
-        font-size: 0.8rem;
-        font-weight: 400;
-        height: 2.8rem;
-        margin-bottom: 0.3rem;
-        /* border: red solid 1px; */
-    }
-    
-    .where {
-        font-size: 0.7rem;
-        /* border: red solid 1px; */
-        margin-bottom: 0.6rem;
-        font-weight: 300;
-        color: var(--color-light);
-    
-    }
-    
-    
-    .divAfficher {
-        display: flex;
-        justify-content: center;
-        /* border: red solid 1px; */
-        margin-top: 0.7rem;
-    
-    }
-    
-    .Afficher {
-        font-size: 0.8rem;
-        font-weight: 500;
-        padding: 3px 1rem;
-    }
-
-    .when,
-    .id,
-    .when-icon,
-    .id-icon {
-        display: none;
-    }
-}
 
 /* ==========================small */
 @media screen and (max-width: 403px) {
     .container.certificat_container {
         width: var(--container-width-ms);
+        width: 100%;
     }
 
-    /* .certificats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            transition: var(--transition);
-        } */
 
 
     .certificat {
-        padding: 0.5rem;
-        border-radius: 1.1rem;
-        margin: 0.5rem;
-        width: 5.3rem;
-        height: 6.5rem;
-    }
-
-    .titre {
-        font-size: 0.6rem;
-        font-weight: 400;
-        height: 2.9rem;
-        margin-bottom: 0.1rem;
-    }
-
-    .where {
-        font-size: 0.5rem;
-        font-weight: 300;
-
+        padding: 0.1rem;
+        /* border-radius: 1.1rem; */
+        margin: 0rem;
+        width: 40%;
+        height: 6rem;
     }
 
 
 
+    .card_container {
+        /* border: rgb(21, 255, 0) 1px solid; */
+        margin: 0.4rem;
 
-    .divAfficher {
+    }
+
+    .card_icon {
+        display: none;
+
+    }
+
+    .titre-icon {}
+
+    .titre_card {
+        /* border: rgb(255, 221, 0) solid 1px; */
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card_titre {
+        /* border: red solid 1px; */
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card_from {
         display: flex;
-        justify-content: center;
-        /* margin-top: 0.1rem; */
+        width: 100%;
+
+        /* padding:  0; */
+
 
     }
+
+    .from {
+        margin: auto;
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+
+
 
     .Afficher {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
         font-weight: 400;
         padding: 1px 0.5rem;
         border-radius: 1rem;

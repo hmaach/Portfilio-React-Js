@@ -75,6 +75,28 @@
     color: var(--color-primary);
 }
 
+.text-light-h4{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.text-light{
+    margin-left: 5px;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* border: red solid 1px; */
+    width: 85%;
+}
+
+.text-light span{
+    margin: 0 2px;
+}
+
+
+
+
 /* ==========================medium */
 @media screen and (max-width: 1024px) {
     .competence_container {
@@ -116,5 +138,23 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 2rem;
+    }
+    .text-light-h4{
+        color: var(--color-white);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .text-light{
+        margin-left: 5px;
+        color: var(--color-white);
+        font-size: 0.9rem;
+        font-weight: 300;
+        /* border: red solid 1px; */
+        width: 85%;
+    }
+    
+    .text-light span{
+        margin: 0 ;
     }
 }
