@@ -30,6 +30,12 @@
     border-radius: 2rem;
 }
 
+.active{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+
 .btn-filter:hover {
     color: var(--color-bg);
     background: var(--color-primary);
@@ -58,7 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 
 
@@ -72,7 +78,7 @@
     /* margin: 1rem 1rem; */
     width: 22%;
     height: 11rem;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 
 .certificat:hover {

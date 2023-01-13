@@ -1,70 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './certificat.css'
 import { BiTimeFive } from 'react-icons/bi'
 import { AiFillCaretRight } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
 import { TbCertificate } from 'react-icons/tb'
+import Filter from './Filter'
+import data from '../../data/data.json'
+import { motion } from 'framer-motion'
+
+
 const Certificat = () => {
 
-    const certificats = [
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSrepfopoefpo,f if,ep,efi,frS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
-        {
-            "id": "9452f947fafb",
-            "filter": "backEnd",
-            "titre": "HTML CSS",
-            "date": "mars 2022",
-            "from": "hackerank",
-            "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
-        },
+    const [filtred, setFiltred] = useState([])
+    const [activeButton, setActiveButton] = useState("all")
 
-    ]
+    const certificats = data.certificat
 
 
     return (
@@ -72,19 +22,18 @@ const Certificat = () => {
             <h5>hhhhhh</h5>
             <h2>Certificat</h2>
             <div className="container certificat_container">
-                <div className="filter">
-                    <button className='btn-filter'>All</button>
-                    <button className='btn-filter'>Front-End</button>
-                    <button className='btn-filter'>Back-End</button>
-                    <button className='btn-filter'>Data Base</button>
-                    <button className='btn-filter'>Other</button>
-                </div>
-                <div className="certificats">
+                <Filter
+                    certificats={certificats}
+                    setFiltred={setFiltred}
+                    activeButton={activeButton}
+                    setActiveButton={setActiveButton}
+                />
+                <motion.div L ayout className="certificats">
 
                     {
-                        certificats.map((item) =>
+                        filtred.map((item) =>
 
-                            <article className="certificat" >
+                            <motion.div layout className="certificat" >
                                 <div className="card card_container">
 
                                     <div className="card card_titre">
@@ -92,7 +41,7 @@ const Certificat = () => {
                                             <TbCertificate className='titre-icon' />
                                         </div>
                                         <div className="titre_card">
-                                        <span className='titre'>{item.titre}</span>
+                                            <span className='titre'>{item.titre}</span>
                                         </div>
                                     </div>
                                     <div className="card_detail">
@@ -116,10 +65,10 @@ const Certificat = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </article>
+                            </motion.div>
 
                         )}
-                </div>
+                </motion.div>
             </div>
         </section>
     )

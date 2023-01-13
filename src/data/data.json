@@ -1,0 +1,202 @@
+{
+  "nom": "Hamza MAACH",
+  "dateNaissance": "2002-05-27",
+  "ville": "Berkane",
+  "pays": "Maroc",
+  "about": "J'étudie actuellement le développement digital Web, et je suis en formation d'innovation entrepreneuriale. Toujours à la recherche d'innovations, de nouveaux programmes et outils de développement. Je m'intéresse à la gestion de projet pour SaaS software (Méthodes Agiles, SCRUM). Je suis passionné par la digitalisation et les innovations digitales surtout dans le domaine de l'agroculture.",
+  "metier": "Full-Stack Web",
+  "contact": {
+    "email": "hamzamaach56@gmail.com",
+    "tel": "+212 766-935013",
+    "whatsapp": "+212766935013",
+    "instagram": "hamza_maax",
+    "twitter": "hamza_maax",
+    "github": "hamzamaach",
+    "linkedin": "hamzamaach",
+    "telegram": "hamzamaach"
+  },
+  "formation": [
+    {
+      "titre": "TECHNICIEN SPÉCIALISÉ EN DÉVELOPPEMENT DIGITAL",
+      "instute": "Institut des technologies appliquée Berkane",
+      "ref": "OFPPT",
+      "date": "Depuis septembre 2021"
+    },
+    {
+      "titre": "PROGRAMME D'INNOVATION ENTREPRENEURIALE (PIE)",
+      "instute": "Institut des technologies appliquée Berkane",
+      "ref": "OFPPT",
+      "date": "Depuis octobre 2021"
+    },
+    {
+      "titre": "BACCALAURÉAT SCIENCE EXPÉRIMENTALE",
+      "instute": "Lycee ABOU LKHAIR, Berkane",
+      "ref": "",
+      "date": "juillet 2020"
+    }
+  ],
+  "competence": [
+    {
+      "categorie": "Les langages de programmation",
+      "filter": "hardskills",
+      "about": [
+        "Python",
+        "Php",
+        "JavaScript",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "categorie": "Les languages des balises et mises en page",
+      "filter": "hardskills",
+      "about": [
+        "HTML",
+        "CSS",
+        "CSS Grid",
+        "Bootstrap"
+      ]
+    },
+    {
+      "categorie": "Les Frameworks",
+      "filter": "hardskills",
+      "about": [
+        "Laravel 9",
+        "ReactJS"
+      ]
+    },
+    {
+      "categorie": "IDE",
+      "filter": "logiciels",
+      "about": [
+        "VS Code",
+        "PyCharm",
+        "DataGrip",
+        "PhpStorm"
+      ]
+    },
+    {
+      "categorie": "Outils de gestion de projet",
+      "filter": "logiciels",
+      "about": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Jira software"
+      ]
+    },
+    {
+      "categorie": "Les outils de conception",
+      "filter": "logiciels",
+      "about": [
+        "StarUML",
+        "Figma"
+      ]
+    }
+  ],
+  "certificat": [
+    {
+      "id": "9452f947fafb",
+      "filter": "backend",
+      "titre": "CSS Certificate",
+      "date": "Janvier 2023",
+      "from": "HackeRank",
+      "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
+    },
+    {
+      "id": "54d2b96d1870",
+      "filter": "database",
+      "titre": "SQL (Basic) Certificate",
+      "date": "Janvier 2023",
+      "from": "HackeRank",
+      "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
+    },
+    {
+      "id": "",
+      "filter": "other",
+      "titre": "Microsoft Word Expert (Office 2016)",
+      "date": "Juin 2022",
+      "from": "Microsoft",
+      "lien": "https://www.credly.com/badges/a91c6915-be42-4a6e-b978-062ff3873446?source=linked_in_profile"
+    },
+    {
+      "id": "6333364139",
+      "filter": "frontend",
+      "titre": "Créez des animations CSS modernes",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/6333364139"
+    },
+    {
+      "id": "7545989242",
+      "filter": "backend",
+      "titre": "Apprenez les bases du langage Python",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7545989242"
+    },
+    {
+      "id": "7287668706",
+      "filter": "frontend",
+      "titre": "Responsive avec Bootstrap 4",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7287668706"
+    },
+    {
+      "id": "4645387204",
+      "filter": "frontend",
+      "titre": "Responsive avec Bootstrap 5",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/4645387204"
+    },
+    {
+      "id": "7039874246",
+      "filter": "frontend",
+      "titre": "Site web avec HTML5 et CSS3",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7039874246"
+    },
+    {
+      "id": "5817088742",
+      "filter": "backend",
+      "titre": "Découpez et intégrez une maquette",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/5817088742"
+    }
+  ],
+  "interet":[
+    {
+      "titre":"Vie associative",
+      "body":"bla bla bal abal",
+      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+
+    },
+    {
+      "titre":"Animation de réseaux sociaux",
+      "body":"bla bla bal abal",
+      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+
+    },
+    {
+      "titre":"Photographie / Montage",
+      "body":"bla bla bal abal",
+      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+
+    },
+    {
+      "titre":"Randonnée pédestre",
+      "body":"bla bla bal abal",
+      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+
+    },
+    {
+      "titre":"Le sport (Football)",
+      "body":"bla bla bal abal",
+      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+    }
+  ]
+}

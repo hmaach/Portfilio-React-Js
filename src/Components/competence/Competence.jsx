@@ -1,119 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './competence.css'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FaPhp } from 'react-icons/fa'
-// import competence from '../../data/data.json'
+import FilterCom from './FilterCom'
+import data from '../../data/data.json'
 
 const Competence = () => {
-  const competence = [
-    {
-      "filter": "hard-skills",
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB",
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "categorie": "Les langages de programmation",
-      "about": [
-        "Python",
-        "Php",
-        "JavaScript",
-        "MySQL",
-        "MongoDB"
-      ]
-    }
-  ]
 
-  
+  const [filtred, setFiltred] = useState([])
+  const [activeButton, setActiveButton] = useState("hardskills")
+
+  const competences = data.competence
+
+
   return (
     <section id='competence'>
       <h5>what skills i have ?</h5>
       <h2>Mes Competence</h2>
-      <div className="competence_filter">
-        <button className='btn-competence_filter'>Hard-Skills</button>
-        <button className='btn-competence_filter'>Hard-Skills</button>
-        <button className='btn-competence_filter'>Logiciels</button>
-        <button className='btn-competence_filter'>Other</button>
-      </div>
-
+      <FilterCom
+        competences={competences}
+        activeButton={activeButton}
+        setFiltred={setFiltred}
+        setActiveButton={setActiveButton}
+      />
       <div className="container competence_container">
 
         <div className="competence_fronEnd">
-          <h3>Front-End </h3>
+          {activeButton === "hardskills" && <h3>Hard-Skills</h3>}
+          {activeButton === "softskills" && <h3>Soft-Skills</h3>}
+          {activeButton === "logiciels" && <h3>Logiciels</h3>}
+          {activeButton === "other " && <h3>Other</h3>}
           <div className="competence_content">
-            {competence.map((competence, index) =>
 
-              <article className="competence_detail" id={index}>
+
+
+            {filtred.map((competence1, index1) =>
+
+              <article className="competence_detail" id={index1}>
                 <AiOutlineHtml5 className='competence_detail-icon' />
                 <div>
-                  <h4 className="text-light-h4">{competence.categorie}</h4>
+                  <h4 className="text-light-h4">{competence1.categorie}</h4>
                   <p className="text-light">
                     {
-                      competence.about.map(competence =>
-                        <span>{competence}, </span>
+                      competence1.about.map((item, index2) =>
+                        <span>{item} {index2 !== (competence1.about.length - 1) && ','}  </span>
                       )}
                   </p>
                 </div>

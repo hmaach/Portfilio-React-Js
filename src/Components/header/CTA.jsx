@@ -1,5 +1,6 @@
 import React from 'react'
 import CV from '../../assets/Hamza_Maach.pdf'
+import data from '../../data/data.json'
 
 const CTA = () => {
   return (

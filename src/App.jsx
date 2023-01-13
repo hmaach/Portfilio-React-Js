@@ -9,21 +9,23 @@ import Interet from './Components/interet/Interet'
 import Contact from './Components/contact/Contact'
 import Footer from './Components/footer/Footer'
 import Certificat from './Components/certificat/Certificat'
+import Profil from './Components/header/Profil'
 
 
 const App = () => {
   return (
     <>
-        <Header />
-        {/* <Nav /> */}
-        <Competence/>
-        <Formation />
-        {/* <Projects/> */}
-        <Certificat/>
-        {/* <Experience/> */}
-        <Interet/>
-        <Contact/>
-        <Footer />
+      {/* <Profil /> */}
+      <Header />    
+      {/* <Nav /> */}
+      <Competence/>
+      <Formation />
+      {/* <Projects/> */}
+      <Certificat/>
+      <Experience/>
+      <Interet/>
+      <Contact/>
+      <Footer />
     </>
   )
 }

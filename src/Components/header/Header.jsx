@@ -5,13 +5,30 @@ import ME from '../../assets/me.jpeg'
 import HeaderSocials from './HeaderSocials'
 import { IoMdMan } from 'react-icons/io'
 import { MdLocationOn } from 'react-icons/md'
+import data from '../../data/data.json'
+
 
 const Header = () => {
+  const information = data
+  const dateN = information.dateNaissance
+  function calculateAge(birthdate){
+    var today = new Date();
+    var birthdate = new Date(birthdate);
+    var age = today.getFullYear() - birthdate.getFullYear();
+    var m = today.getMonth() - birthdate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+        age--;
+    }
+    return age;
+  }
+  
+
+    
   return (
     <header>
       <div className="container header_container">
-        <h5>Full-Stack Web</h5>
-        <h1> Hamza MAACH</h1>
+        <h5>{information.metier}</h5>
+        <h1> {information.nom}</h1>
 
         {/* ------------- */}
         <div className="header_container2">
@@ -33,17 +50,10 @@ const Header = () => {
             <section id="about">
               <h2>A propos de moi</h2>
               <div className="info">
-                <span className="location"><MdLocationOn className='location-icon' />berkane,maroc</span>
-                <span className="age"><IoMdMan className='age-icon' />20 Ans</span>
+                <span className="location"><MdLocationOn className='location-icon' />{information.ville}, {information.pays}</span>
+                <span className="age"><IoMdMan className='age-icon' />{calculateAge(dateN)} Ans</span>
               </div>
-              <p>J'étudie actuellement le développement digital Web, et je
-                suis en formation d'innovation entrepreneuriale. Toujours
-                à la recherche d'innovations, de nouveaux programmes et
-                outils de développement. Je m'intéresse à la gestion de
-                projet pour SaaS software (Méthodes Agiles, SCRUM).
-                Je suis passionné par la digitalisation et les innovations
-                digitales surtout dans le domaine de l'agroculture.
-              </p>
+              <p>{information.about}</p>
             </section>
           </div>
 

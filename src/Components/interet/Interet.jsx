@@ -6,8 +6,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import 'swiper/css';
+import data from '../../data/data.json'
+
 
 const Interet = () => {
+
+  const interet = data.interet
+  // console.log(interet)
 
   const pagination = {
     clickable: true,
@@ -27,67 +32,40 @@ const Interet = () => {
         pagination={pagination}
         modules={[Pagination]}
       >
-        <SwiperSlide className="interet">
-          <div className="avatar_div">
-            <SiPhotocrowd className='avatar' />
-          </div>
-          <h5 className="interet_nom">ASSSSSS</h5>
-          <small className="interet_detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            libero quidem magnam, ad ipsam cupiditate rerum, sunt inventore quae
-            repellat nostrum hic incidunt placeat aperiam. Adipisci, sint sit vero eos eligendi,
-            repellendus sapiente ratione alias cumque nulla praesentium fugit dolores!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="interet">
-          <div className="avatar_div">
-            <SiPhotocrowd className='avatar' />
-          </div>
-          <h5 className="interet_nom">ASSSSSS</h5>
-          <small className="interet_detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            libero quidem magnam, ad ipsam cupiditate rerum, sunt inventore quae
-            repellat nostrum hic incidunt placeat aperiam. Adipisci, sint sit vero eos eligendi,
-            repellendus sapiente ratione alias cumque nulla praesentium fugit dolores!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="interet">
-          <div className="avatar_div">
-            <SiPhotocrowd className='avatar' />
-          </div>
-          <h5 className="interet_nom">ASSSSSS</h5>
-          <small className="interet_detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            libero quidem magnam, ad ipsam cupiditate rerum, sunt inventore quae
-            repellat nostrum hic incidunt placeat aperiam. Adipisci, sint sit vero eos eligendi,
-            repellendus sapiente ratione alias cumque nulla praesentium fugit dolores!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="interet">
-          <div className="avatar_div">
-            <SiPhotocrowd className='avatar' />
-          </div>
-          <h5 className="interet_nom">ASSSSSS</h5>
-          <small className="interet_detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            libero quidem magnam, ad ipsam cupiditate rerum, sunt inventore quae
-            repellat nostrum hic incidunt placeat aperiam. Adipisci, sint sit vero eos eligendi,
-            repellendus sapiente ratione alias cumque nulla praesentium fugit dolores!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="interet">
-          <div className="avatar_div">
-            <SiPhotocrowd className='avatar' />
-          </div>
-          <h5 className="interet_nom">ASSSSSS</h5>
-          <small className="interet_detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            libero quidem magnam, ad ipsam cupiditate rerum, sunt inventore quae
-            repellat nostrum hic incidunt placeat aperiam. Adipisci, sint sit vero eos eligendi,
-            repellendus sapiente ratione alias cumque nulla praesentium fugit dolores!
-          </small>
-        </SwiperSlide>
+        
+        
+        
+        {interet.map((item, index) =>
+        <SwiperSlide className="interet" key={index}>
+      <div class="container3">
+  <div class="card1">
+    <div class="card1-header">
+      <img src={item.image} alt="rover" />
+    </div>
+    <div class="card1-body">
+      <div className="titre1">
+
+      <h4 className="interet_nom">
+      {item.titre}
+      </h4>
+      </div>
+      <div className="body">
+
+      <p className="interet_detail">
+      {item.body}
+      </p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+          </SwiperSlide>
+        )
+        }
       </Swiper>
+
+  
+      
     </section>
   )
 }

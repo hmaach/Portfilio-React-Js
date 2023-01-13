@@ -25,6 +25,11 @@
     border-radius: 2rem;
 }
 
+.activeCom{
+    color: var(--color-bg);
+    background: var(--color-primary);
+}
+
 .btn-competence_filter:hover{
     color: var(--color-bg);
     background: var(--color-primary);
