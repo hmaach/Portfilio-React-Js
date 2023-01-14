@@ -1,18 +1,14 @@
 import React from 'react'
 import './formation.css'
-import { MdComputer } from 'react-icons/md'
-import { BsInfoCircleFill } from 'react-icons/bs'
 import { ImLocation } from 'react-icons/im'
 import { BiTimeFive } from 'react-icons/bi'
 import data from '../../data/data.json'
-
 
 const Formation = () => {
   const information = data
   const Me2 = information.images.me4
   return (
     <section id="formation">
-
       <h5>Mon parcours académique</h5>
       <h2>Mes Formations</h2>
       <div className="container formation_container">
@@ -21,8 +17,8 @@ const Formation = () => {
         </div>
         <div className="formations">
           {
-            data.formation.map(formation => 
-              <article className="formation">
+            data.formation.map((formation,index) => 
+              <article className="formation" key={index}>
             <span className="titref">{formation.titre}</span>
             <h5 className="wheref"><ImLocation className='wheref-icon' />{formation.ref}
             {formation.ref && " | " } 

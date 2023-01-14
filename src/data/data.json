@@ -10,17 +10,17 @@
     "email": "hamzamaach56@gmail.com",
     "tel": "+212 766-935013",
     "whatsapp": "+212766935013",
-    "instagram": "hamza_maax",
+    "instagram": "hamzamaah_",
     "twitter": "hamza_maax",
     "github": "hamzamaach",
     "linkedin": "hamzamaach",
     "telegram": "hamzamaach"
   },
   "images": {
-    "me1":"https://pieberkane.live/data/assets/me.jpeg",
-    "me2":"https://pieberkane.live/data/assets/me2.jpg",
-    "me3":"https://pieberkane.live/data/assets/m5.jpg",
-    "me4":"https://pieberkane.live/data/assets/me4.jpg"
+    "me1": "https://pieberkane.live/data/assets/me.jpeg",
+    "me2": "https://pieberkane.live/data/assets/me2.jpg",
+    "me3": "https://pieberkane.live/data/assets/m5.jpg",
+    "me4": "https://pieberkane.live/data/assets/me4.jpg"
   },
   "formation": [
     {
@@ -200,7 +200,7 @@
       "titre": "Animation de réseaux sociaux",
       "body": "Gérer des comptes sur les réseaux sociaux permet de mieux comprendre la population et ses goûts. À l'heure actuelle, j'ai un petit compte Instagram ",
       "image": "https://pieberkane.live/data/assets/rs.png",
-      "ref":"https://www.instagram.com/pie_stagiaires/"
+      "ref": "https://www.instagram.com/pie_stagiaires/"
     },
     {
       "titre": "Photographie / Montage",
@@ -208,29 +208,32 @@
       "image": "https://pieberkane.live/data/assets/montage.jpg"
     }
   ],
-  "project":[
+  "project": [
     {
       "titre": "Gl-Shop1",
-      "outils":[
-        "HTML","CSS"
+      "outils": [
+        "HTML",
+        "CSS"
       ],
-      "description":"My first interface ever, it's a store for glaces.",
-      "demo":"https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
-      "github":"https://github.com/hamzamaach/Gl-Shop1",
-      "image":"https://pieberkane.live/data/assets/project1.png"
-      
+      "description": "My first interface ever, it's a store for glaces.",
+      "demo": "https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
+      "github": "https://github.com/hamzamaach/Gl-Shop1",
+      "image": "https://pieberkane.live/data/assets/project1.png"
     },
     {
       "titre": "PortFolio React",
-      "outils":[
-        "HTML","CSS","JSON","Js","react","API"
+      "outils": [
+        "HTML",
+        "CSS",
+        "JSON",
+        "Js",
+        "react",
+        "API"
       ],
-      "description":"C'est une interface qui a été construite par react Js, et l'importation des données depuis une API que j'ai créée.",
-      "demo":"",
-      "github":"",
-      "image":"https://pieberkane.live/data/assets/project2.png"
-      
+      "description": "C'est une interface qui a été construite par react Js, et l'importation des données depuis une API que j'ai créée.",
+      "demo": "",
+      "github": "",
+      "image": "https://pieberkane.live/data/assets/project2.png"
     }
-   
   ]
 }

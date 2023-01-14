@@ -5,19 +5,22 @@
 } */
 
 
-.competence_filter{
+.competence_filter {
     /* border: red 1px solid; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* border: red 1px solid; */
+    margin: auto;
+    max-width: 80%;
     margin-bottom: 2.5rem;
 }
 
-.btn-competence_filter{
+.btn-competence_filter {
     background: var(--color-bg);
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
-    margin:  0 1rem;
+    margin: 0 1rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     cursor: pointer;
@@ -25,18 +28,18 @@
     border-radius: 2rem;
 }
 
-.activeCom{
+.activeCom {
     color: var(--color-bg);
     background: var(--color-primary);
 }
 
-.btn-competence_filter:hover{
+.btn-competence_filter:hover {
     color: var(--color-bg);
     background: var(--color-primary);
 }
 
 
-.btn-competence_filter:active{
+.btn-competence_filter:active {
     color: var(--color-bg);
     background: var(--color-primary);
 }
@@ -80,13 +83,13 @@
     color: var(--color-primary);
 }
 
-.text-light-h4{
+.text-light-h4 {
     color: var(--color-white);
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.text-light{
+.text-light {
     margin-left: 5px;
     color: var(--color-white);
     font-size: 1.2rem;
@@ -95,7 +98,7 @@
     width: 85%;
 }
 
-.text-light span{
+.text-light span {
     margin: 0 2px;
 }
 
@@ -108,22 +111,24 @@
         grid-template-columns: 1fr;
     }
 
-    .competence_container > div {
+    .competence_container>div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
+
     .competence_content {
         padding: 1rem;
     }
-    .btn-competence_filter{
+
+    .btn-competence_filter {
         margin: 0.3rem;
-        padding: 0.3rem 0.8rem;
-        font-size: 0.5rem;
+        padding: 0.5rem 0.9rem;
+        font-size: 1.1rem;
         border: 1px solid var(--color-primary);
     }
-    
-    
+
+
 }
 
 /* ==========================small */
@@ -132,25 +137,28 @@
         gap: 1rem;
     }
 
-    .competence_container > div {
+    .competence_container>div {
         width: 100%;
         padding: 2rem 1rem;
     }
+
     .competence_content {
         padding: 1rem;
     }
+
     .competence_content {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
-    .text-light-h4{
+
+    .text-light-h4 {
         color: var(--color-white);
         font-size: 1.1rem;
         font-weight: 500;
     }
-    
-    .text-light{
+
+    .text-light {
         margin-left: 5px;
         color: var(--color-white);
         font-size: 0.9rem;
@@ -158,8 +166,9 @@
         /* border: red solid 1px; */
         width: 85%;
     }
-    
-    .text-light span{
-        margin: 0 ;
+
+    .text-light span {
+        margin: 0;
     }
+
 }

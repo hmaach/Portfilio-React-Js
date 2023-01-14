@@ -19,7 +19,7 @@ const Projects = () => {
             <h3>{project.titre}</h3>
             <span>Outils :
               {project.outils.map((item, index2) =>
-                <p> {item} {index2 !== (project.outils.length - 1) && ','} </p>
+                <p key={index2}> {index2 !== (project.outils.length - 1) && item.concat(' , ')} </p>
               )}
             </span>
             <h6>{project.description}</h6>

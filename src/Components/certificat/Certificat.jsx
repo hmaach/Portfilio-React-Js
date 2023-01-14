@@ -28,14 +28,11 @@ const Certificat = () => {
                     activeButton={activeButton}
                     setActiveButton={setActiveButton}
                 />
-                <motion.div L ayout className="certificats">
-
+                <motion.div layout className="certificats">
                     {
-                        filtred.map((item) =>
-
-                            <motion.div layout className="certificat" >
+                        filtred.map((item, index) =>
+                            <motion.div layout className="certificat" key={index} >
                                 <div className="card card_container">
-
                                     <div className="card card_titre">
                                         <div className="card_icon">
                                             <TbCertificate className='titre-icon' />
@@ -45,20 +42,15 @@ const Certificat = () => {
                                         </div>
                                     </div>
                                     <div className="card_detail">
-
-
                                         <div className="card card_from">
                                             <h5 className="from">{item.from}</h5>
                                         </div>
-
-
                                         <div className="card card_date">
                                             <small className="when">{item.date}</small>
                                         </div>
 
                                         <div className="card card_id">
                                             <small className="id">id: {item.id}</small>
-
                                         </div>
                                         <div className='card card_afficher'>
                                             <a href={item.lien} target="_blank" className='Afficher' >Afficher <FiExternalLink /></a>
@@ -66,7 +58,6 @@ const Certificat = () => {
                                     </div>
                                 </div>
                             </motion.div>
-
                         )}
                 </motion.div>
             </div>

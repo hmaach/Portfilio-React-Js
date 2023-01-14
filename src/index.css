@@ -19,22 +19,22 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.774);
 
-    --transition: all 400ms ease; 
+    --transition: all 400ms ease;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-ms: 80%;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-   display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     /* background-color: var(--color-bg); */
     color: var(--color-white);
@@ -45,35 +45,41 @@ body{
 
 /* =========================== */
 
-.container{
+.container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
 
-section{
+section {
     margin-top: 8rem;
 }
 
-section > h2,section > h5{
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section >h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
 
-.tex-light{
-    color:var(--color-primary)
+.tex-light {
+    color: var(--color-primary)
 }
 
 a {
@@ -81,7 +87,7 @@ a {
     transition: var(--transition);
 }
 
-a:hover{
+a:hover {
     color: var(--color-white);
 }
 
@@ -102,7 +108,7 @@ a:hover{
     border-color: transparent;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--color-primary);
     color: var(--color-bg);
 }
@@ -114,21 +120,23 @@ img {
 }
 
 /* ==========================medium */
-@media screen and (max-width: 1024px){
-     .container{
+@media screen and (max-width: 1024px) {
+    .container {
         width: var(--container-width-md);
-     }
-     section{
+    }
+
+    section {
         margin-top: 6rem;
-     }
+    }
 }
 
 /* ==========================small */
-@media screen and (max-width: 600px){
-    .container{
-       width: var(--container-width-ms);
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-ms);
     }
-    section > h2{
-       margin-bottom: 2rem;
+
+    section>h2 {
+        margin-bottom: 2rem;
     }
 }

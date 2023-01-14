@@ -56,6 +56,17 @@ textarea {
     color: var(--color-white);
 }
 
+input:focus,
+textarea:focus {
+    width: 100%;
+    border: 2px solid var(--color-primary-variant);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+}
+
 .contact_a {
     font-size: 0.8rem;
     font-weight: 500;

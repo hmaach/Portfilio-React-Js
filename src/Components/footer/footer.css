@@ -1,4 +1,4 @@
-footer{
+footer {
     /* background: var(--color-primary); */
     /* padding: 3rem 0; */
     text-align: center;
@@ -20,7 +20,7 @@ footer{
 
 } */
 
-.social_footer{
+.social_footer {
     display: flex;
     justify-content: center;
     gap: 1;
@@ -28,7 +28,7 @@ footer{
     /* border: solid red 1px; */
 }
 
-.social_footer a{
+.social_footer a {
     background: var(--color-primary);
     color: var(--color-bg);
     padding: 0.7rem;
@@ -39,9 +39,9 @@ footer{
 
 }
 
-.social_footer a:hover{
+.social_footer a:hover {
     /* background: transparent; */
     color: var(--color-white);
-    
+
     /* border: solid 1px var(--color-primary); */
 }

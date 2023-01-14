@@ -12,6 +12,8 @@
 /* ----------------les btns du filtrage */
 .filter {
     /* border: red 1px solid; */
+    margin: auto;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -30,7 +32,7 @@
     border-radius: 2rem;
 }
 
-.active{
+.active {
     background: var(--color-primary);
     color: var(--color-bg);
 }
@@ -212,8 +214,8 @@
 
     .btn-filter {
         margin: 0.3rem;
-        padding: 0.5rem 0.8rem;
-        font-size: 1rem;
+        padding: 0.5rem 0.9rem;
+        font-size: 1.1rem;
         border: 1px solid var(--color-primary);
     }
 
@@ -250,12 +252,12 @@
         width: 100%;
     }
 
-    .btn-filter {
+    /* .btn-filter {
         margin: 0.3rem;
         padding: 0.3rem 0.7rem;
         font-size: 0.8rem;
         border: 1px solid var(--color-primary);
-    }
+    } */
 
     .titre {
         font-size: 0.7rem;
@@ -329,7 +331,6 @@
 
     }
 
-    .titre-icon {}
 
     .titre_card {
         /* border: rgb(255, 221, 0) solid 1px; */

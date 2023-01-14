@@ -1,10 +1,10 @@
-.project_container{
+.project_container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
-.project_item{
+.project_item {
     padding: 1.2rem;
     background: var(--color-bg-variant);
     border-radius: 2rem;
@@ -13,35 +13,38 @@
     max-height: 35.4rem;
 }
 
-.project_item:hover{
+.project_item:hover {
     /* background: transparent; */
     border: 1px solid var(--color-primary-variant);
 }
 
-.project_item-image{
+.project_item-image {
     border-radius: 1.5rem;
     height: 16rem;
     overflow: hidden;
-} 
+    /* border: red solid 1px; */
+}
 
-.project_item h3{
+.project_item h3 {
     /* border: red solid 1px; */
     margin: 1rem 0 0.5rem;
 }
-.project_item span{
-    font-size:0.91rem;
+
+.project_item span {
+    font-size: 0.91rem;
     display: flex;
     /* border: red solid 1px; */
     /* margin: 0.2rem 0 1rem; */
 }
-.project_item h6{
+
+.project_item h6 {
     /* border: red solid 1px; */
     margin: 0.4rem 0 1rem;
     font-size: 14px;
     font-weight: 400;
 }
 
-.project_item-cta{
+.project_item-cta {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -50,42 +53,64 @@
     /* border: solid; */
 }
 
-/* ==========================medium */
-@media screen and (max-width: 1024px){
-    .project_container{
+/* ==========================plus medium */
+@media screen and (max-width: 1309px) {
+    .project_container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
         /* background-color: red; */
     }
 }
 
-/* ==========================small */
-@media screen and (max-width: 600px){
-    .project_container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
+
+/* ==========================medium */
+@media screen and (max-width: 1024px) {
+    .project_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
         /* background-color: red; */
     }
 }
 
+/* ==========================small medum */
+@media screen and (max-width: 913px) {
+    .project_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        /* background-color: red; */
+    }
+
+    .project_item {
+        padding: 1rem;
+        max-height: 26rem;
+    }
+
+    .project_item-image {
+        border-radius: 1.5rem;
+        height: 10rem;
+        /* overflow: hidden; */
+        /* border: red solid 1px; */
+    }
+}
 
 
+/* ==========================small */
+@media screen and (max-width: 790px) {
+    .project_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        /* background-color: red; */
+    }
 
+    .project_item {
+        padding: 1rem;
+        max-height: 26rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .project_item-image {
+        border-radius: 1.5rem;
+        height: 10rem;
+        /* overflow: hidden; */
+        /* border: red solid 1px; */
+    }
+}

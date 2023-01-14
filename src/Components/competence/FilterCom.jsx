@@ -3,17 +3,10 @@ import React, { useEffect } from 'react'
 const FilterCom = ({ competences, activeButton, setFiltred, setActiveButton }) => {
 
     useEffect(() => {
-
-
         const filtred = competences.filter((item) =>
             item.filter.includes(activeButton))
-
         setFiltred(filtred)
-        // console.log(filtred)
-
-
     }, [activeButton]);
-
 
     return (
         <div className="competence_filter">
