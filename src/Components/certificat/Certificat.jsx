@@ -19,8 +19,8 @@ const Certificat = () => {
 
     return (
         <section id="certificat">
-            <h5>hhhhhh</h5>
-            <h2>Certificat</h2>
+            <h5>On pourrait apprendre beaucoup à partir de certificats</h5>
+            <h2>Mes Certificats</h2>
             <div className="container certificat_container">
                 <Filter
                     certificats={certificats}

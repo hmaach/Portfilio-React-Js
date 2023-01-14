@@ -10,20 +10,35 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    max-height: 35.4rem;
 }
 
 .project_item:hover{
-    background: transparent;
+    /* background: transparent; */
     border: 1px solid var(--color-primary-variant);
 }
 
 .project_item-image{
     border-radius: 1.5rem;
+    height: 16rem;
     overflow: hidden;
-}
+} 
 
 .project_item h3{
-    margin: 1.2rem 0 2rem;
+    /* border: red solid 1px; */
+    margin: 1rem 0 0.5rem;
+}
+.project_item span{
+    font-size:0.91rem;
+    display: flex;
+    /* border: red solid 1px; */
+    /* margin: 0.2rem 0 1rem; */
+}
+.project_item h6{
+    /* border: red solid 1px; */
+    margin: 0.4rem 0 1rem;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .project_item-cta{

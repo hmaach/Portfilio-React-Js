@@ -3,6 +3,7 @@
   "dateNaissance": "2002-05-27",
   "ville": "Berkane",
   "pays": "Maroc",
+  "cv": "https://pieberkane.live/data/assets/Hamza_Maach.pdf",
   "about": "J'étudie actuellement le développement digital Web, et je suis en formation d'innovation entrepreneuriale. Toujours à la recherche d'innovations, de nouveaux programmes et outils de développement. Je m'intéresse à la gestion de projet pour SaaS software (Méthodes Agiles, SCRUM). Je suis passionné par la digitalisation et les innovations digitales surtout dans le domaine de l'agroculture.",
   "metier": "Full-Stack Web",
   "contact": {
@@ -14,6 +15,12 @@
     "github": "hamzamaach",
     "linkedin": "hamzamaach",
     "telegram": "hamzamaach"
+  },
+  "images": {
+    "me1":"https://pieberkane.live/data/assets/me.jpeg",
+    "me2":"https://pieberkane.live/data/assets/me2.jpg",
+    "me3":"https://pieberkane.live/data/assets/m5.jpg",
+    "me4":"https://pieberkane.live/data/assets/me4.jpg"
   },
   "formation": [
     {
@@ -92,6 +99,11 @@
         "StarUML",
         "Figma"
       ]
+    },
+    {
+      "categorie": "La créativité",
+      "filter": "softskills",
+      "about": []
     }
   ],
   "certificat": [
@@ -168,35 +180,57 @@
       "lien": "https://openclassrooms.com/en/course-certificates/5817088742"
     }
   ],
-  "interet":[
+  "interet": [
     {
-      "titre":"Vie associative",
-      "body":"bla bla bal abal",
-      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
-
+      "titre": "Randonnée pédestre",
+      "body": "La randonnée pédestre est importante pour maintenir une bonne condition physique et pour découvrir la nature en même temps.",
+      "image": "https://pieberkane.live/data/assets/randonnee.jpg"
     },
     {
-      "titre":"Animation de réseaux sociaux",
-      "body":"bla bla bal abal",
-      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
-
+      "titre": "Le sport (Football)",
+      "body": "Trés important pour améliorer ma condition physique et mon bien-être mental, ",
+      "image": "https://pieberkane.live/data/assets/football.jpg"
     },
     {
-      "titre":"Photographie / Montage",
-      "body":"bla bla bal abal",
-      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
-
+      "titre": "Vie associative",
+      "body": "je prends toujours soin développer des compétences sociales et contribuer à la communauté en même temps.",
+      "image": "https://pieberkane.live/data/assets/associative.png"
     },
     {
-      "titre":"Randonnée pédestre",
-      "body":"bla bla bal abal",
-      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
-
+      "titre": "Animation de réseaux sociaux",
+      "body": "Gérer des comptes sur les réseaux sociaux permet de mieux comprendre la population et ses goûts. À l'heure actuelle, j'ai un petit compte Instagram ",
+      "image": "https://pieberkane.live/data/assets/rs.png",
+      "ref":"https://www.instagram.com/pie_stagiaires/"
     },
     {
-      "titre":"Le sport (Football)",
-      "body":"bla bla bal abal",
-      "image":"https://drive.google.com/file/d/1qFGQR9XzJbY4b19UiRji0F9pgfLPWZZB/view?usp=sharing"
+      "titre": "Photographie / Montage",
+      "body": "La photographie et le montage sont importants pour exprimer ma créativité, capturer des moments importants et créer des souvenirs durables.",
+      "image": "https://pieberkane.live/data/assets/montage.jpg"
     }
+  ],
+  "project":[
+    {
+      "titre": "Gl-Shop1",
+      "outils":[
+        "HTML","CSS"
+      ],
+      "description":"My first interface ever, it's a store for glaces.",
+      "demo":"https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
+      "github":"https://github.com/hamzamaach/Gl-Shop1",
+      "image":"https://pieberkane.live/data/assets/project1.png"
+      
+    },
+    {
+      "titre": "PortFolio React",
+      "outils":[
+        "HTML","CSS","JSON","Js","react","API"
+      ],
+      "description":"C'est une interface qui a été construite par react Js, et l'importation des données depuis une API que j'ai créée.",
+      "demo":"",
+      "github":"",
+      "image":"https://pieberkane.live/data/assets/project2.png"
+      
+    }
+   
   ]
 }

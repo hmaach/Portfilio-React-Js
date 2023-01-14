@@ -8,8 +8,12 @@ import { MdLocationOn } from 'react-icons/md'
 import data from '../../data/data.json'
 
 
+
 const Header = () => {
   const information = data
+  const Me1 = information.images.me3
+
+  
   const dateN = information.dateNaissance
   function calculateAge(birthdate){
     var today = new Date();
@@ -40,7 +44,7 @@ const Header = () => {
             <CTA />
             <HeaderSocials />
             <div className="me">
-              <img src={ME} alt="me" />
+              <img src={Me1} alt="me" />
             </div>
 
 

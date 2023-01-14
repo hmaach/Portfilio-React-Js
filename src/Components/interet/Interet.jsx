@@ -24,8 +24,8 @@ const Interet = () => {
 
   return (
     <section id="interet">
-      <h5>hi</h5>
-      <h2>Interet</h2>
+      <h5>Explorant mes centres d'intérêt pour découvrir mes passions</h5>
+      <h2>Centre d'Intérêt</h2>
 
       <Swiper
         className="container mySwiper container_interet"
@@ -33,7 +33,7 @@ const Interet = () => {
         modules={[Pagination]}
       >
         
-        
+         
         
         {interet.map((item, index) =>
         <SwiperSlide className="interet" key={index}>
@@ -52,7 +52,7 @@ const Interet = () => {
       <div className="body">
 
       <p className="interet_detail">
-      {item.body}
+      {item.body}{item.ref && <a href='https://www.instagram.com/pie_stagiaires/'>@pie_stagiaires </a>}
       </p>
       </div>
       

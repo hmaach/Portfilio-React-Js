@@ -20,9 +20,9 @@ const App = () => {
       {/* <Nav /> */}
       <Competence/>
       <Formation />
-      {/* <Projects/> */}
+      <Projects/>
       <Certificat/>
-      <Experience/>
+      {/* <Experience/> */}
       <Interet/>
       <Contact/>
       <Footer />

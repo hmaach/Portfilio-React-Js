@@ -15,8 +15,8 @@ const Competence = () => {
 
   return (
     <section id='competence'>
-      <h5>what skills i have ?</h5>
-      <h2>Mes Competence</h2>
+      <h5>Quelles compétences j'ai ?</h5>
+      <h2>Mes Competences</h2>
       <FilterCom
         competences={competences}
         activeButton={activeButton}
