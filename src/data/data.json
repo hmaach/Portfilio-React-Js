@@ -4,7 +4,7 @@
   "ville": "Berkane",
   "pays": "Maroc",
   "cv": "https://pieberkane.live/data/assets/Hamza_Maach.pdf",
-  "about": "J'étudie actuellement le développement digital Web, et je suis en formation d'innovation entrepreneuriale. Toujours à la recherche d'innovations, de nouveaux programmes et outils de développement. Je m'intéresse à la gestion de projet pour SaaS software (Méthodes Agiles, SCRUM). Je suis passionné par la digitalisation et les innovations digitales surtout dans le domaine de l'agroculture.",
+  "about": "J'étudie actuellement le développement digital Web, et je suis en formation d'innovation entrepreneuriale. Toujours à la recherche d'innovations, de nouveaux programmes et outils de développement. Je m'intéresse à la gestion de projet pour SaaS software (Méthodes Agiles, SCRUM). Je suis passionné par la digitalisation et les innovations digitales surtout dans le domaine de Digital Marketing.",
   "metier": "Full-Stack Web",
   "contact": {
     "email": "hamzamaach56@gmail.com",
@@ -101,8 +101,67 @@
       ]
     },
     {
-      "categorie": "La créativité",
+      "categorie": "Ouverture à la nouveauté",
       "filter": "softskills",
+      "about": ["On m'apprend sans cesse de nouvelles choses et de nouveaux outils."]
+    },
+    {
+      "categorie": "Respectueux",
+      "filter": "softskills",
+      "about": ["Le respect mutuale est important pour moi dans toutes les situations."]
+    },
+    {
+      "categorie": "Attentif, à l'ecoute",
+      "filter": "softskills",
+      "about": ["Me permet de prêter attention aux besoins et aux préoccupations des autres, et de comprendre leur point de vue."]
+    },
+    {
+      "categorie": "Flexibilité et adaptabilité",
+      "filter": "softskills",
+      "about": ["Ma flexibilité et mon adaptabilité me permettent de m'adapter rapidement aux changements."]
+    },
+    {
+      "categorie": "Résolution de problèmes",
+      "filter": "softskills",
+      "about": ["Ce qui me rend efficace dans la gestion des situations imprévues et la prise de décisions stratégiques."]
+    },
+    {
+      "categorie": "Observateur",
+      "filter": "softskills",
+      "about": ["Mon soft skill d'observation me permet de remarquer les détails importants."]
+    },
+    {
+      "categorie": "Laravel 9",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "Ethique professionnelle",
+      "filter": "softskills",
+      "about": ["Ce qui me permet de générer confiance et respect envers les collègues."]
+    },{
+      "categorie": "L'entreprenariat",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "Redux",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "UML",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "React Js",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "JavaScript avancé",
+      "filter": "encours",
       "about": []
     }
   ],

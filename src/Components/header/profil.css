@@ -68,3 +68,45 @@
     transform: rotate(-360deg);
   }
 }
+
+/* ==========================small */
+@media screen and (max-width: 600px) {
+  .headerSocial {
+
+      top: 20rem;
+  }
+
+  .header_container2 > div {
+      width: 100%;
+      padding: 2rem 1rem;
+  }
+  .profil_container {
+    /* border: red 1px solid; */
+    width: 10rem;
+    overflow: hidden;
+    height: 10rem;
+    margin:  auto;
+    margin-top: 4rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    /* overflow: hidden; */
+}
+.pic {
+  position: absolute;
+  width: 9.4rem;
+  height: 9.4rem;
+  top: 5px;
+  left: 0.3rem;
+  /* bottom: 0.5rem; */
+  border-radius: 3rem;
+  overflow: hidden;
+  transition: var(--transition);
+  background: var(--color-bg-variant);
+  /* border: 1px green solid; */
+}
+.anime::before {
+
+  animation: rotate 4s linear infinite;
+}
+
+
+}

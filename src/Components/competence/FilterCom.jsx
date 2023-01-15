@@ -12,6 +12,13 @@ const FilterCom = ({ competences, activeButton, setFiltred, setActiveButton }) =
         <div className="competence_filter">
             <button
                 className={
+                    activeButton === "encours" ?
+                        "activeCom btn-competence_filter" :
+                        "btn-competence_filter"}
+                onClick={() => setActiveButton("encours")}
+            >En cours d'apprentissage</button>
+            <button
+                className={
                     activeButton === "hardskills" ?
                         "activeCom btn-competence_filter" :
                         "btn-competence_filter"}
@@ -31,13 +38,7 @@ const FilterCom = ({ competences, activeButton, setFiltred, setActiveButton }) =
                         "btn-competence_filter"}
                 onClick={() => setActiveButton("logiciels")}
             >Logiciels</button>
-            <button
-                className={
-                    activeButton === "other" ?
-                        "activeCom btn-competence_filter" :
-                        "btn-competence_filter"}
-                onClick={() => setActiveButton("other")}
-            >Other</button>
+            
         </div>
     )
 }
