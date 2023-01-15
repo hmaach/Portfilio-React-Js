@@ -9,6 +9,7 @@
   background: transparent;
   /* text-align: center; */
   padding: 2rem;
+  padding-bottom: 7px;
   border-radius: 2rem;
   border: 1px solid transparent;
   user-select: none;
@@ -28,9 +29,26 @@
   font-weight: 400;
 }
 
+.swipe-icon{
+  /* border: red solid 1px; */
+  width: 70%;
+  float: right;
+  display: flex;
+  justify-content: end;
+  padding-right: 4rem;
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 17px;
+}
 
+.swipe-span{
+  font-size: 14px;
+  /* display: inline-block; */
+  /* margin-left: 19px; */
+  /* border: red solid 1px; */
 
-
+  
+}
 
 
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");

@@ -19,7 +19,7 @@
   border-radius: 3rem;
   overflow: hidden;
   transition: var(--transition);
-  background: var(--color-bg-variant);
+  background: white;
   /* border: 1px green solid; */
 }
 

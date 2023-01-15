@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './interet.css'
-import { SiPhotocrowd } from 'react-icons/si'
+import { MdSwipe } from 'react-icons/md'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,7 +13,7 @@ const Interet = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span className="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
   return (
@@ -51,6 +51,7 @@ const Interet = () => {
             </div>
           </SwiperSlide>
         )}
+        <div className="swipe-icon"><span><span className='swipe-span'> Glisser</span> <MdSwipe/></span></div>
       </Swiper>
     </section>
   )
