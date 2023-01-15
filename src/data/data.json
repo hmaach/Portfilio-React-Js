@@ -68,7 +68,6 @@
       "categorie": "Les Frameworks",
       "filter": "hardskills",
       "about": [
-        "Laravel 9",
         "ReactJS"
       ]
     },
@@ -289,7 +288,7 @@
         "react",
         "API"
       ],
-      "description": "C'est une interface qui a été construite par react Js, et l'importation des données depuis une API que j'ai créée.",
+      "description": "C'est une interface qui a été construite par react Js.",
       "demo": "",
       "github": "",
       "image": "https://pieberkane.live/data/assets/project2.png"
