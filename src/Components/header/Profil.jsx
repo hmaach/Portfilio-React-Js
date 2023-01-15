@@ -13,7 +13,7 @@ const Profil = () => {
                 </div>
                 <div className="pic">
                     <div className="pic2">
-                    {/* <img src={Me1}  /> */}
+                    <img src={Me1}  />
                     </div>
                 </div>
             </div>
