@@ -17,9 +17,9 @@ const Projects = () => {
               <img src={project.image} alt="project" />
             </div>
             <h3>{project.titre}</h3>
-            <span>Outils :
+            <span>Outils : 
               {project.outils.map((item, index2) =>
-                <p key={index2}> {index2 !== (project.outils.length - 1) && item.concat(' , ')} </p>
+                <p key={index2}> {index2 !== (project.outils.length) && item.concat(' ,')} </p>
               )}
             </span>
             <h6>{project.description}</h6>

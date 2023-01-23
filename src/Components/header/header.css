@@ -154,16 +154,17 @@ header {
         /* border: red solid 1px; */
         justify-content: center;
     }
-    .cta a:first-child {
-        /* border: red solid 1px; */
-        /* width: 80%; */
-        
-    }
     .about {
         /* border: rgb(94, 255, 0) 1px solid; */
         margin: 0;
         padding: 0 !important;
     }
     
+    header {
+        padding-top: 1.5rem;
+    }
 
+    header h1 {
+        font-size: 1.8rem;
+    }
 }

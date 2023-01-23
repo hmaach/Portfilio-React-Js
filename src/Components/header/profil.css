@@ -1,12 +1,8 @@
 .profil_container {
-  /* border: yellow solid 1px; */
   width: 16rem;
   height: 16rem;
   position: relative;
   margin: 1.5rem auto 0;
-  /* background-image: url("https://pieberkane.live/data/assets/m5.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* height: 20rem;; */
 }
 
 .pic {
@@ -15,12 +11,10 @@
   height: 15.2rem;
   top: 0.4rem;
   left: 0.4rem;
-  /* bottom: 0.5rem; */
   border-radius: 3rem;
   overflow: hidden;
   transition: var(--transition);
   background: white;
-  /* border: 1px green solid; */
 }
 
 .pic:hover {
@@ -28,17 +22,14 @@
   height: 100%;
   top: 0px;
   left: 0px;
-  /* bottom: 0.5rem; */
   border-radius: 3rem;
   overflow: hidden;
-  /* border: 1px green solid; */
 }
 
 
 .anime {
   width: 100%;
   height: 100%;
-  /* box-shadow: 16px 14px 20px #0000008c; */
   border-radius: 3rem;
   position: relative;
   overflow: hidden;
@@ -81,28 +72,20 @@
       padding: 2rem 1rem;
   }
   .profil_container {
-    /* border: red 1px solid; */
     width: 10rem;
     overflow: hidden;
     height: 10rem;
     margin:  auto;
     margin-top: 4rem;
-    /* border-radius: 12rem 12rem 0 0; */
-    /* overflow: hidden; */
 }
 .pic {
-  position: absolute;
   width: 9.4rem;
   height: 9.4rem;
   top: 5px;
   left: 0.3rem;
-  /* bottom: 0.5rem; */
   border-radius: 3rem;
-  overflow: hidden;
-  transition: var(--transition);
-  background: var(--color-bg-variant);
-  /* border: 1px green solid; */
 }
+  
 .anime::before {
 
   animation: rotate 4s linear infinite;

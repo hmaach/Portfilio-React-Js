@@ -275,8 +275,19 @@
       ],
       "description": "My first interface ever, it's a store for glaces.",
       "demo": "https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
-      "github": "https://github.com/hamzamaach/Gl-Shop1",
+      "github": "",
       "image": "https://pieberkane.live/data/assets/project1.png"
+    },
+    {
+      "titre": "Gestion des employés",
+      "outils": [
+        "Php",
+        "Bootstrap"
+      ],
+      "description": "Petite application de gestion des employés avec l'architecture MVC.",
+      "demo": "",
+      "github": "https://github.com/hamzamaach/gestionEmployees-MVC",
+      "image": "https://pieberkane.live/data/assets/project3.png"
     },
     {
       "titre": "PortFolio React",
@@ -284,8 +295,7 @@
         "HTML",
         "CSS",
         "JSON",
-        "Js",
-        "react"
+        "ReactJs"
       ],
       "description": "C'est une interface qui a été construite par react Js.",
       "demo": "",
