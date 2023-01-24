@@ -267,17 +267,7 @@
     }
   ],
   "project": [
-    {
-      "titre": "Gl-Shop1",
-      "outils": [
-        "HTML",
-        "CSS"
-      ],
-      "description": "My first interface ever, it's a store for glaces.",
-      "demo": "https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
-      "github": "",
-      "image": "https://pieberkane.live/data/assets/project1.png"
-    },
+    
     {
       "titre": "Gestion des employés",
       "outils": [
@@ -295,12 +285,23 @@
         "HTML",
         "CSS",
         "JSON",
-        "ReactJs"
+        "React Js"
       ],
       "description": "C'est une interface qui a été construite par react Js.",
       "demo": "",
       "github": "",
       "image": "https://pieberkane.live/data/assets/project2.png"
+    },
+    {
+      "titre": "Github-Profile",
+      "outils": [
+        "React Js",
+        "Rest API"
+      ],
+      "description": "En saisissant le nom d'utilisateur, il récupère les informations du compte github, et les affiche sous forme d'une carte.",
+      "demo": "https://github-profile-lemon.vercel.app/",
+      "github": "https://github.com/hamzamaach/github-profile",
+      "image": "https://pieberkane.live/data/assets/project4.png"
     }
   ]
 }
