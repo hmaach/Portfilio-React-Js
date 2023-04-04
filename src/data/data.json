@@ -305,17 +305,15 @@
       "image": "https://pieberkane.live/data/assets/project8.png"
     },
     {
-      "titre": "PortFolio React",
+      "titre": "Github-Profile",
       "outils": [
-        "HTML",
-        "CSS",
-        "JSON",
-        "React Js"
+        "React Js",
+        "API"
       ],
-      "description": "C'est une interface qui a été construite par react Js.",
-      "demo": "",
-      "github": "https://github.com/hamzamaach/Portfilio-React-Js",
-      "image": "https://pieberkane.live/data/assets/project2.png"
+      "description": "En saisissant le nom d'utilisateur, il récupère les informations du compte github, et les affiche sous forme d'une carte.",
+      "demo": "https://github-profile-lemon.vercel.app/",
+      "github": "https://github.com/hamzamaach/github-profile",
+      "image": "https://pieberkane.live/data/assets/project4.png"
     }
   ]
 }
